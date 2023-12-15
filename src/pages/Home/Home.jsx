@@ -17,6 +17,7 @@ function Home() {
 
   useEffect(() =>{
     localStorage.setItem('items', JSON.stringify(noteGroups))
+    setNoteGroups()
   }, [noteGroups])
 
   return (
@@ -39,14 +40,14 @@ function Home() {
               
 
             
-            {/*<img src={noNotes} alt="" />
+            <img src={noNotes} alt="" />
             <h1>Pocket Notes</h1>
             <p>Send and receive messages without keeping your phone online.
 Use Pocket Notes on up to 4 linked devices and 1 mobile phone</p>
 <div className='rights'>
               <img src={lock} alt="" />
             end-to-end encrypted
-  </div>*/}
+  </div>
                 
             </div>
             <div className="textarea">
