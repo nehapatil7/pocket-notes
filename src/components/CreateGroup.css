@@ -1,0 +1,116 @@
+.container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    background: rgba(49,49,49,0.8);
+}
+
+.createGroup {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.createGroup h2 {
+    font-family: Roboto;
+    font-size: 25px; 
+    font-weight: 550;
+    line-height: 41px;
+    letter-spacing: 0.02em;
+    width: 219px;
+    height: 41px;
+    margin-top: 10px;
+
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 400px;
+    margin-top: 15px;
+}
+
+.name label {
+    font-family: Roboto;
+    font-size: 20px; 
+    font-weight: 550;
+    letter-spacing: 0.02em;
+    
+}
+
+.name input {
+    width: 253px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 22px;
+    border: 2px solid #a19d9d;
+    background: #FFF;
+    margin-left: 20px;
+    color: #a19d9d;
+}
+
+.color {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 400px;
+    margin-top: 15px;
+}
+
+.color label {
+    font-family: Roboto;
+    font-size: 20px; 
+    font-weight: 550;
+    letter-spacing: 0.02em;
+  
+}
+
+.colorsImg {
+    width: 253px;
+    height: 30px;
+    margin-left: 20px;
+    display: flex;
+    
+}
+
+.colors {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: mauve;
+    margin-right: 5px;
+}
+
+.create-btn {
+    width: 140px;
+    height: 35px;
+    border-radius: 11px;
+    background: #001F8B;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.188%; /* 32.038px */
+    letter-spacing: 0.7px;
+    margin-left: 260px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border: #001F8B;
+    cursor: pointer;
+}

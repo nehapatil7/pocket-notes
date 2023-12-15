@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.sidebar {
+    height: 815px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar p {
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: 550;
+    line-height: 41px;
+    letter-spacing: 0.02em;
+    width: 219px;
+    height: 41px;
+    margin-top: 15px;
+    margin-left: 70px;
+}
+
+.groupNames {
+    background-color: burlywood;
+    height: 830px;
+    width: 350px;
+    overflow-y: scroll;
+}
+
+.add-btn {
+    background-color: blue;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    border: blue;
+    margin-left: 260px;
+    margin-top: 650px;
+    position: sticky;
+    cursor: pointer;
+}
+
+.notesContainer {
+    background-color: lavender;
+    height: 815px;
+    width: 1100px;
+}
+
+.notes {
+    background-color: lavender;
+    height: 815px;
+    width: 1100px;
+}
