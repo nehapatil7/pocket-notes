@@ -17,6 +17,7 @@ function Home() {
 
   useEffect(() =>{
     localStorage.setItem('items', JSON.stringify(noteGroups))
+    setNoteGroups()
   }, [noteGroups])
 
   return (
