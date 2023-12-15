@@ -19,7 +19,7 @@ const CreateGroup = ({closeModal, dataStored}) => {
 
     const onColorClick = (color) => setGroupColor(color);
 
-    const handleCreateButtonClick = () => {
+    const handleCreate = () => {
         const newGroup = {
             id: Date.now(),
             group: { groupName, groupData: [], groupColor },
@@ -35,7 +35,7 @@ const CreateGroup = ({closeModal, dataStored}) => {
             alert("Please enter a group name.");
           return; 
         }
-        handleCreateButtonClick(); 
+        handleCreate(); 
         
          
       };
@@ -43,7 +43,7 @@ const CreateGroup = ({closeModal, dataStored}) => {
 
     return (
       <>
-      <div className='container' onClick={closeModal}></div>
+      <div className='container-wrapper' onClick={closeModal}></div>
         <div className="createGroup">
           <h2>Crete New Group</h2>
           <div className="name">

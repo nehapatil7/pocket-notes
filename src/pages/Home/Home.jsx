@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import './Home.css'
 import create from '../../assets/+.png'
-import noNotes from '../../assets/noNotes.png'
 import CreateGroup from '../../components/CreateGroup.jsx'
+import noNotes from '../../assets/noNotes.png'
 import lock from '../../assets/lock.png'
 
 
 function Home() {
-  const [noteGroups, setNoteGroups] = useState()
+  const [noteGroups, setNoteGroups] = useState([])
   
   const [isOpen, setIsOpen] = useState(false);
   
@@ -17,7 +17,6 @@ function Home() {
 
   useEffect(() =>{
     localStorage.setItem('items', JSON.stringify(noteGroups))
-    setNoteGroups()
   }, [noteGroups])
 
   return (
@@ -37,18 +36,17 @@ function Home() {
         <div className="notesContainer">
          <div className="title"></div>
             <div className="notes">
-              
-
-            
-            <img src={noNotes} alt="" />
-            <h1>Pocket Notes</h1>
-            <p>Send and receive messages without keeping your phone online.
-Use Pocket Notes on up to 4 linked devices and 1 mobile phone</p>
-<div className='rights'>
-              <img src={lock} alt="" />
-            end-to-end encrypted
-  </div>
-                
+            <div className='empty-page'>
+              <img src={noNotes} alt="" />
+              <h1>Pocket Notes</h1>
+              <p>Send and receive messages without keeping your phone online.
+              Use Pocket Notes on up to 4 linked devices and 1 mobile phone</p>
+              <div className='rights'>
+                  <img src={lock} alt="" />
+                  end-to-end encrypted
+              </div>
+            </div>
+       
             </div>
             <div className="textarea">
 
